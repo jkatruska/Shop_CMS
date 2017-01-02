@@ -1,0 +1,485 @@
+@charset "utf-8";
+@font-face{
+	font-family:Oswald;
+	src:url(font/Oswald-Regular.ttf);
+}
+@font-face{
+	font-family:Oswald-bold;
+	src:url(font/Oswald-Bold.ttf);	
+}
+a:visited{
+	color:white;
+}
+a{
+	color:white;
+}
+/* CSS Document */
+body{
+	background-image:url(img/background.png);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:auto;
+	margin:0;
+}
+div#wrapper{
+	width:1000px;
+	margin:0 auto;
+}
+div#logo{
+	height:55px;	
+}
+/*menu*/
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFF;
+  height: 4px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+div.space{
+	width:1000px;
+	height:78.5px;
+}
+div#menu{
+	width:1000px;
+	height:50px;	
+}
+div#menu ul{
+	width:1000px;
+	height:50px;	
+	padding-left:0;	
+}
+div#menu ul li{
+	float:left;
+	list-style-type:none;
+	width:250px;
+	height:50px;
+	background-color:rgba(0,0,0,0.7);
+	text-align:center;
+	font-family:Oswald;
+	color:#FFFFFF;
+	line-height:50px;
+	vertical-align:middle;	
+	font-size:30px;
+}
+/*slideshow*/
+img.img{
+	height:415px;
+	width:800px;
+	object-fit:fill;
+}
+div#slideshow{
+	width:1000px;
+	height:415px;	
+}
+ul#slider{
+	padding:0;
+	width:800px;
+	height:415px;
+	margin:0;
+	float:left;
+}
+li.slide{
+	list-style-type:none;
+	width:800px;
+	height:415px;
+	display:none;
+	position:relative;
+	top:0;
+	left:0;	
+}
+.active-slide{
+	display:block !important;
+	z-index:55;
+}
+
+	/*low-slider*/
+img.img-low{
+	height:103.75px;
+	width:200px;
+	object-fit:fill;
+}
+ul#low-slider{
+	width:200px;
+	height:415px;
+	padding:0;
+	margin:0;
+	display:block;
+	float:right;
+}
+li.low-slide{
+	list-style-type:none;
+	position:relative;
+	height:103.75px;
+}
+.inline-stroke{
+	outline: 4px solid white;
+    outline-offset: -4px;
+}
+img#arrow-prev{
+	position:absolute;
+	z-index:999;
+}
+img#arrow-next{
+	position:absolute;
+	z-index:999;
+	top:590px;
+}
+/*main*/
+div#main{
+	margin-top:20px;
+	width:1000px;
+	background-color:rgba(0,0,0,0.6);
+	color:white;
+	overflow:hidden;
+}
+p.title{
+	font-family:Oswald;
+	font-weight:bold;
+	font-size:25px;
+	margin-top:0px;
+	margin-bottom:10px;
+	padding-top:10px;
+	padding-left:25px;
+	width:745px;
+	float:left;
+}
+p#text{
+	font-family:Oswald;
+	width:745px;
+	padding-left:25px;
+	padding-top:8px;
+	padding-bottom:10px;
+	margin:0;
+	float:left;
+}
+p.bold{
+	font-family:Oswald-bold;
+}
+div#line{
+	width:770px;
+	height:3px;
+	background-color:white;
+	float:left;
+}
+img#predajna{
+	width:200px;
+	object-fit:fill;
+	padding-top:11px;
+	padding-left:15px;
+}
+/*footer*/
+#footer{
+	width:1000px;
+	height:39px;
+	border-top:solid 1px white;
+	background-color:rgba(0,0,0,0.8)
+}
+p#admin{
+  	width: 175px;	 
+  	float: right;
+  	margin-top: 0;
+  	padding-top: 10px;
+  	text-align: right;
+	padding-right: 25px;
+  	color: white;
+	font-family:Oswald;
+	font-size:13px;
+}
+p#admin:hover{
+	text-decoration:underline;
+}
+p#author{
+	padding-left:195px; 
+	color:white; 
+	font-family:Oswald;
+	font-size:13px;
+	padding-top:10px;
+	margin-top:0;
+	text-align:center;
+	width:600px;
+	float:left;
+}
+div.polozka{
+	width:230px;
+	margin-left:10px;
+	margin-right:10px;
+}
+/*Partneri*/
+div#main_partneri{
+	margin-top:20px;
+	width:1000px;
+	height:auto;
+	background-color:rgba(0,0,0,0.6);
+	color:white;
+	overflow:hidden;
+}
+p.name{
+	margin-top:0;
+	margin-bottom:0;
+	padding-left:25px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-family:Oswald;	
+	font-size:24px;
+}
+div.ciara{
+	width:980px;
+	height:3px;
+	background-color:white;
+	margin-bottom:10px;
+	margin-left:10px;
+}
+div.partneri{
+	float:left;
+	width:190px;
+	height:215px;
+	margin-left:5px;
+	margin-right:5px;
+	}
+img.img_partneri{
+	width:190px;
+	height:190px;
+	object-fit:contain;
+}
+p.nazov_firmy{
+	width:190px;
+	height:20px;
+	background-color:rgba(0,0,0,0.6);
+	text-align:center;
+	line-height:20px;
+	vertical-align:middle;
+	margin:0;
+	margin-top:5px;
+	font-family:Oswald;
+	text-transform:uppercase;
+	transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	
+}
+div.partneri:hover p.nazov_firmy{
+	background-color:rgba(0,0,0,1);	
+}
+div.clear{
+	clear:both;
+}
+/*výpredaj*/
+img.img_sale{
+	width:240px;
+	height:240px;
+	object-fit:scale-down;
+	position:relative;
+	z-index:19;
+	margin-left:5px;
+	margin-right:5px;
+}
+div.overlay_wrapper{
+	position:absolute;
+	z-index:20;
+}
+div.overlay{
+	width:240px;
+	height:240px;
+	position:relative;
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+	overflow:hidden;
+	transition:all 0.6s ease-in-out;
+	-webkit-transition:all 0.6s ease-in-out;
+	-moz-transition:all 0.6s ease-in-out;
+	-o-transition:all 0.6s ease-in-out;
+	-ms-transition:all 0.6s ease-in-out;
+	margin-top:2.5px;
+}
+div.overlay:hover{
+	background-color:rgba(0,0,0,0.7);	
+}
+.nazov_produktu{
+	opacity:0;
+	margin:0;
+	margin-left:-100%;
+	margin-top:15px;
+	font-size:20px;
+	font-family:Oswald-bold;
+	word-break:break-all; 
+	transition:all 0.6s ease-in-out;
+	-webkit-transition:all 0.6s ease-in-out;
+	-moz-transition:all 0.6s ease-in-out;
+	-o-transition:all 0.6s ease-in-out;
+	-ms-transition:all 0.6s ease-in-out;
+}
+.popis{
+	opacity:0;
+	margin:0;
+	margin-left:-100%;
+	margin-right:15px;
+	font-size:15px;
+	font-family:Oswald; 
+	transition:all 0.6s ease-in-out;
+	-webkit-transition:all 0.6s ease-in-out;
+	-moz-transition:all 0.6s ease-in-out;
+	-o-transition:all 0.6s ease-in-out;
+	-ms-transition:all 0.6s ease-in-out;
+}
+div.overlay:hover .popis{
+	opacity:1;
+	margin-left:15px;	
+}
+div.overlay:hover .nazov_produktu{
+	opacity:1;
+	margin-left:15px;	
+}
+.stara_cena{
+	opacity:0;
+	margin:0;
+	margin-left:15px;
+	text-decoration:line-through;
+	font-family:Oswald;
+	position:absolute;
+	top:200px;
+	transition:all 0.6s ease-in-out;
+	-webkit-transition:all 0.6s ease-in-out;
+	-moz-transition:all 0.6s ease-in-out;
+	-o-transition:all 0.6s ease-in-out;
+	-ms-transition:all 0.6s ease-in-out;
+}
+div.overlay:hover .stara_cena{
+	opacity:1;
+	padding-top:5px;	
+}
+.nova_cena{
+	opacity:0;
+	margin:0;
+	margin-right:15px;
+	float:right;
+	font-size:22px;
+	color:red;
+	font-family:Oswald-bold;
+	position:absolute;
+	top:195px;
+	left:190px;
+	transition:all 0.6s ease-in-out;
+	-webkit-transition:all 0.6s ease-in-out;
+	-moz-transition:all 0.6s ease-in-out;
+	-o-transition:all 0.6s ease-in-out;
+	-ms-transition:all 0.6s ease-in-out;
+}
+div.overlay:hover .nova_cena{
+	opacity:1;
+	padding-top:5px;
+}
+/*kontakt*/
+img#predajna_kontakt{
+	padding-left:15px;
+	float:left;
+	width: 335px;
+  	padding-right: 15px;
+	padding-bottom: 15px;
+}
+p#popis{
+	font-family:Oswald;	
+	float:left;
+	margin-top:0;
+}
+div#map{
+	float:right;
+	padding-right:15px;
+}
+/*login*/
+div#left{
+	width:49.75%;
+	float:left;
+}
+#time{
+	margin-left:32%;
+	margin-top:36%;
+	color:white;
+	font-family:Oswald;
+}
+#hours_mins{
+	float:left;
+	font-size:100px;
+}
+#seconds{
+	font-size:70px;
+	padding-top:6%;
+}
+div#mid{
+	width:0.5%;
+	float:left;
+	position:relative;
+}
+div#vertical-line{
+	height:98vh;
+	width:100%;
+	background-color:white;
+	position: relative;
+	transform: translateY(1%);
+}
+div#right{
+	width:49.75%;
+	float:right;
+}
+form#login_form{
+	margin-left:32%;
+	margin-top:30%;
+	font-family:Oswald;
+	color:white;
+	font-size:32px;
+}
+input[type=text]{
+	width:50%;
+	height:25px;
+	font-family:Oswald;
+}
+input[type=password]{
+	width:50%;
+	height:25px;	
+	font-family:Oswald;
+}
+input[type=submit]{
+	font-family:Oswald;
+	background-color:rgba(255,255,255,0.7);
+	border:none;
+	width:25%;
+	height:25px;
+	text-transform:uppercase;	
+}
+/*cms*/
+div#fixed{
+	width:100%;
+	height:20px;
+	background-color:black;
+		
+}
